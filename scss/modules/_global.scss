@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $white;
+    overflow-x: hidden;
+}
+
+a {
+    font-style: underline;
+    cursor: pointer;
+}
+
+main {
+    width: 100vw;
+}

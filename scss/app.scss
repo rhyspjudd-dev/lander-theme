@@ -1,0 +1,39 @@
+// Pallette
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkCyan: hsl(167, 40%, 24%);
+$darkBlue: hsl(198, 62%, 26%);
+$cyan: hsl(168, 34%, 41%);
+
+// Neutral
+$darkDesaturatedBlue: hsl(212, 27%, 19%);
+$darkGrayishBlue: hsl(213, 9%, 39%);
+$altDarkGrayishBlue: hsl(232, 10%, 55%);
+$grayishBlue: hsl(210, 4%, 67%);
+$white: #FFFCF9;
+
+// Global vars
+$padding-4: 4%;
+$padding-8: 8%;
+$padding-12: 12%;
+
+// SCSS Module Imports
+@import 'modules/_global';
+@import 'modules/_reset';
+@import 'modules/_grid';
+@import 'modules/_fonts';
+@import 'modules/_header';
+@import 'modules/_footer';
+@import 'modules/_gallery';
+@import 'modules/_responsive';
+@import 'modules/_animations';
+
+// Components
+@import 'components/_btn';
+@import 'components/_nav';
+@import 'components/_icons';
+@import 'components/_cards';
+@import 'components/_scrollbar';
+
+
+

@@ -1,0 +1,122 @@
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+    @media (min-width: 768px) { 
+        grid-template-columns: repeat(2, 1fr); 
+     }
+    .box {
+        width: 100%;
+        min-height: 40vh;
+        background: $white;
+        padding: $padding-8;
+        display: grid;
+        place-items: center;
+
+        @media screen and (min-width:320px) and (max-width:992px) and (orientation:landscape) {
+            min-height: 80vh;
+        }
+
+        &:nth-child(1) {
+            background: url('../images/mobile/image-transform.jpg') center no-repeat;
+            background-size: cover;
+            @media (min-width: 768px) { 
+                background: url('../images/desktop/image-transform.jpg') center no-repeat;
+                background-size: cover;
+            }
+        }
+        &:nth-child(3) {
+            background: url('../images/mobile/image-stand-out.jpg') center no-repeat;
+            background-size: cover;
+            @media (min-width: 768px) { 
+                background: url('../images/desktop/image-stand-out.jpg') center no-repeat;
+                background-size: cover;
+            }
+        }
+        &:nth-child(5) {
+            background: url('../images/mobile/image-graphic-design.jpg') center no-repeat;
+            background-size: cover;
+            color: $darkCyan;
+
+            @media (min-width: 992px) { 
+                background: url('../images/desktop/image-graphic-design.jpg') center no-repeat;
+                background-size: cover;
+                min-height: 80vh;
+            }
+
+            p {
+                color: $darkCyan;
+                font-weight: 900;
+            }
+        }
+        &:nth-child(6) {
+            background: url('../images/mobile/image-photography.jpg') center no-repeat;
+            background-size: cover;
+            color: $darkBlue;
+
+            @media (min-width: 992px) { 
+                background: url('../images/desktop/image-photography.jpg') center no-repeat;
+                background-size: cover;
+                min-height: 80vh;
+            }
+
+            p {
+                color: $darkBlue;
+                font-weight: 900;
+            }
+        }
+    }
+    .txtImg-box {
+        min-height: 60vh;
+        display: flex !important;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 4% !important;
+        h2, p {
+            text-align: center;
+        }
+        .text-container {
+            padding: 4%;
+            min-height: 18vh;
+            display: grid;
+        }
+    }
+    .txtbox {
+        @media (min-width: 1200px) { 
+            h2 {
+                max-width: 70%;
+                @media (min-width: 1400px) { 
+                    margin-top: -4%;
+                }
+            }
+        }
+    }
+
+
+    .box {
+        @media (min-width: 768px) { 
+            max-width: 570px;
+            display: unset;
+            padding: 16%;
+            h2 {
+                width: 100%;
+                padding-top: $padding-12;
+            }
+            p {
+                margin-bottom: 8%;
+            }
+            &:nth-child(2){
+               grid-column: 1;
+               grid-row: 1;
+           }
+            &:nth-child(4){
+               grid-column: 2;
+               grid-row: 2;
+           }
+       }
+
+       @media (min-width: 992px) { 
+            max-width: unset;
+        }
+       
+    }
+}

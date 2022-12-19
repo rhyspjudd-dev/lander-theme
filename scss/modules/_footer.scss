@@ -1,0 +1,24 @@
+footer {
+    background: $cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+
+    .logo {
+        height: 30px;
+        width: 130px;
+        margin: auto;
+    }
+
+    .social { 
+        margin-top: 4%;
+        display: inline-flex;
+        height: 50px;
+
+        .social-ico {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}

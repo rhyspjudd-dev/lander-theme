@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url('../fonts/Barlow-Regular.ttf');
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../fonts/Fraunces_9pt-Bold.ttf');
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    text-align: center;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-style: bold;
+    
+}
+
+p, ol, ul {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6em;
+    letter-spacing: 1.4px;
+    color: $altDarkGrayishBlue;
+    font-family: "Barlow-Regular";
+}
+
+h1 {
+    font-size: 7.5vw;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;
+    // @media (max-width: 299px) {
+    //     font-size: 5vw;
+    // }
+    @media (min-width: 500px) {
+        letter-spacing: 5.6px;
+        font-size: 6.15vw;
+    }
+    @media (min-width: 768px) {
+        letter-spacing: 5.6px;
+        font-size: 4.15vw;
+    }
+}
+
+h2 {
+    font-size: 7vw;
+    font-weight: 700;
+    margin-bottom: 30px;
+    @media (min-width: 768px) {
+        font-size: 3.6vw;
+        margin-bottom: 30px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 2.6vw;
+        margin-bottom: 30px;
+    }
+}
+
+h3 {
+    margin: 4% 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $grayishBlue;
+    font-size: 1.1rem;
+}
+
+p {
+    margin-bottom: 30px;
+}
